@@ -24,8 +24,6 @@
             border: 1px solid #d9cbb5;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
-            position: relative;
-            box-shadow: 0 0 6px gray;
             width: 90%;
             animation: fadeIn 1.5s ease-in-out;
         }
@@ -49,11 +47,11 @@
         .info {
             font-size: 18px;
             color: #4a6538;
-            margin-bottom: 45px;
+            margin-bottom: 20px;
         }
         .data {
-            width: 100px;
-            height: 100px;
+            width: 120px;
+            height: 120px;
             background-color: #b86134;
             border-radius: 50%;
             display: flex;
@@ -63,6 +61,7 @@
             color: white;
             font-weight: bold;
             box-shadow: 0 0 6px gray;
+            margin: 20px auto;
         }
         .detalhes {
             font-size: 18px;
@@ -70,23 +69,21 @@
             margin-top: 20px;
             line-height: 30px;
         }
+
+        /* Ícones organizados verticalmente */
         .icones-container {
             display: flex;
-            justify-content: center;
-            gap: 80px;
+            flex-direction: column;
             align-items: center;
-            flex-wrap: wrap;
+            gap: 30px;
         }
+
         .icone {
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
-            animation: slideUp 1.2s ease-in-out backwards;
         }
-        .icone:nth-child(1) { animation-delay: 0.2s; }
-        .icone:nth-child(2) { animation-delay: 0.4s; }
-        .icone:nth-child(3) { animation-delay: 0.6s; }
 
         .icone .circulo {
             box-shadow: 0 0 6px gray;
@@ -99,13 +96,16 @@
             align-items: center;
             transition: transform 0.3s ease-in-out;
         }
+
         .icone .circulo:hover {
             transform: scale(1.1);
         }
+
         .icone i {
             font-size: 50px;
             color: white;
         }
+
         .icone p {
             font-family: 'Times New Roman', Times, serif;
             margin-top: 10px;
@@ -113,10 +113,12 @@
             color: #4a6538;
             text-align: center;
         }
+
         span {
             font-size: 30px;
-            margin: 30px;
+            margin: 20px;
         }
+
         a {
             text-decoration: none;
         }
@@ -132,76 +134,6 @@
                 transform: translateY(0);
             }
         }
-        @keyframes slideUp {
-            from {
-                opacity: 0;
-                transform: translateY(50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Responsividade para tablets */
-        @media (max-width: 768px) {
-            .convite {
-                padding: 20px;
-                width: 90%;
-            }
-            .icones-container {
-                gap: 40px;
-            }
-            .icone {
-                flex: 1 1 45%;
-                min-width: 150px;
-            }
-            .titulo {
-                font-size: 16px;
-            }
-            .nome {
-                font-size: 36px;
-            }
-            .data {
-                width: 80px;
-                height: 80px;
-                font-size: 40px;
-            }
-        }
-
-        /* Responsividade para celulares */
-        @media (max-width: 480px) {
-            .convite {
-                padding: 15px;
-                width: 95%;
-            }
-            .titulo {
-                font-size: 14px;
-            }
-            .nome {
-                font-size: 28px;
-            }
-            .info {
-                font-size: 16px;
-            }
-            .data {
-                width: 70px;
-                height: 70px;
-                font-size: 36px;
-            }
-            .icone p {
-                font-size: 14px;
-            }
-            .icone .circulo {
-                width: 80px;
-                height: 80px;
-            }
-            .icones-container {
-                flex-direction: column;
-                align-items: center;
-                gap: 30px;
-            }
-        }
     </style>
 </head>
 <body>
@@ -213,7 +145,11 @@
     <img src="3.png" alt="">
     
     <p class="info">
-        <span>FEV</span> <span class="data">22</span> <span>18HR</span>
+        <span>FEV</span>
+    </p>
+    <div class="data">22</div>
+    <p class="info">
+        <span>18HR</span>
     </p>
     
     <p class="detalhes">
