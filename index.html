@@ -123,6 +123,84 @@
         a{
             text-decoration: none;
         }
+        /* Responsividade para tablets e telas menores */
+@media (max-width: 768px) {
+    .convite {
+        padding: 20px;
+        margin: 30px auto;
+        width: 90%;
+    }
+
+    .icones-container {
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .icone {
+        flex: 1 1 45%;
+        min-width: 150px;
+    }
+
+    .titulo {
+        font-size: 16px;
+    }
+
+    .nome {
+        font-size: 36px;
+    }
+
+    .data {
+        width: 80px;
+        height: 80px;
+        font-size: 40px;
+    }
+
+    .icone p {
+        font-size: 16px;
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+    .convite {
+        padding: 15px;
+        width: 95%;
+    }
+
+    .titulo {
+        font-size: 14px;
+    }
+
+    .nome {
+        font-size: 28px;
+    }
+
+    .info {
+        font-size: 16px;
+    }
+
+    .data {
+        width: 70px;
+        height: 70px;
+        font-size: 36px;
+    }
+
+    .icone p {
+        font-size: 14px;
+    }
+
+    .icone .circulo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .icones-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
         /* Animação de fade-in */
 @keyframes fadeIn {
     from {
