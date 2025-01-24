@@ -11,17 +11,19 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #d9cbb5;
+            background: #b86134; /* Cor de fundo semelhante aos ícones */
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            width: 100%;
+            overflow-x: hidden;
         }
 
         .convite {
-            max-width: 400px;
+            max-width: 450px;
             background: white;
-            padding: 30px 20px;
+            padding: 40px 20px;
             border-radius: 15px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
@@ -85,10 +87,9 @@
         /* Ícones organizados horizontalmente */
         .icones-container {
             display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 20px;
-            padding: 20px 30px;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px 0;
         }
 
         .icone {
@@ -133,11 +134,9 @@
 
         /* Responsividade */
         @media (max-width: 768px) {
-            body {
-                background-size: cover;
-            }
             .convite {
-                padding: 20px;
+                padding: 30px 15px;
+                max-width: 400px;
             }
             .titulo {
                 font-size: 1em;
