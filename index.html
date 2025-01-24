@@ -11,57 +11,63 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #b860347a;
-            background-image: url('background.jpg'); /* Substitua pelo caminho correto */
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
+            background: #d9cbb5;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
         }
+
         .convite {
-            max-width: 600px;
+            max-width: 400px;
             background: white;
-            padding: 40px;
-            border: 1px solid #d9cbb5;
+            padding: 30px 20px;
+            border-radius: 15px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
             width: 90%;
-            animation: fadeIn 1.5s ease-in-out;
-            border-radius: 15px;
         }
+
         .convite img {
             width: 100%;
             display: block;
             border-radius: 10px;
         }
+
         .titulo {
             font-size: 1.2em;
             color: #4a6538;
             margin: 20px 0;
             line-height: 1.5;
         }
-        .info {
-            font-size: 1.1em;
-            color: #4a6538;
-            margin-bottom: 20px;
+
+        .nome {
+            font-size: 48px;
+            font-weight: bold;
+            color: #8b4e06;
         }
+
+        .info {
+            font-size: 1.2em;
+            color: #4a6538;
+            font-weight: bold;
+        }
+
         .data {
-            width: 100px;
-            height: 100px;
+            width: 80px;
+            height: 80px;
             background-color: #b86134;
             border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 40px;
+            font-size: 36px;
             color: white;
             font-weight: bold;
             box-shadow: 0 0 6px gray;
             margin: 20px auto;
         }
+
         .detalhes {
             font-size: 1em;
             color: #4a6538;
@@ -72,9 +78,9 @@
         /* Ícones organizados horizontalmente */
         .icones-container {
             display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
+            justify-content: space-around;
+            align-items: center;
+            gap: 10px;
         }
 
         .icone {
@@ -82,7 +88,6 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
-            max-width: 100px;
         }
 
         .icone .circulo {
@@ -102,7 +107,7 @@
         }
 
         .icone i {
-            font-size: 40px;
+            font-size: 36px;
             color: white;
         }
 
@@ -120,7 +125,6 @@
         /* Responsividade */
         @media (max-width: 768px) {
             body {
-                background-attachment: scroll;
                 background-size: cover;
             }
             .convite {
@@ -130,8 +134,8 @@
                 font-size: 1em;
             }
             .data {
-                width: 80px;
-                height: 80px;
+                width: 70px;
+                height: 70px;
                 font-size: 30px;
             }
             .icone .circulo {
@@ -139,7 +143,7 @@
                 height: 70px;
             }
             .icone i {
-                font-size: 30px;
+                font-size: 28px;
             }
             .icone p {
                 font-size: 12px;
@@ -158,13 +162,9 @@
     
     <img src="3.png" alt="Nome Aniversariante">
     
-    <p class="info">
-        <span>FEV</span>
-    </p>
+    <p class="info">FEV</p>
     <div class="data">22</div>
-    <p class="info">
-        <span>18HR</span>
-    </p>
+    <p class="info">18HR</p>
     
     <p class="detalhes">
         A realizar-se na Rua Aquárius, 214<br>
