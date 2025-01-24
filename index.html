@@ -26,56 +26,57 @@
             text-align: center;
             width: 90%;
             animation: fadeIn 1.5s ease-in-out;
+            border-radius: 15px;
         }
         .convite img {
             width: 100%;
             display: block;
+            border-radius: 10px;
         }
         .titulo {
-            font-size: 18px;
+            font-size: 1.2em;
             color: #4a6538;
             margin: 20px 0;
-            line-height: 30px;
-            opacity: 0;
+            line-height: 1.5;
             animation: fadeIn 2s ease-in-out 0.5s forwards;
         }
         .nome {
-            font-size: 48px;
+            font-size: 2.5em;
             font-weight: bold;
             color: #8b4e06;
         }
         .info {
-            font-size: 18px;
+            font-size: 1.1em;
             color: #4a6538;
             margin-bottom: 20px;
         }
         .data {
-            width: 120px;
-            height: 120px;
+            width: 100px;
+            height: 100px;
             background-color: #b86134;
             border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 50px;
+            font-size: 40px;
             color: white;
             font-weight: bold;
             box-shadow: 0 0 6px gray;
             margin: 20px auto;
         }
         .detalhes {
-            font-size: 18px;
+            font-size: 1em;
             color: #4a6538;
             margin-top: 20px;
-            line-height: 30px;
+            line-height: 1.5;
         }
 
-        /* Ícones organizados verticalmente */
+        /* Ícones organizados horizontalmente */
         .icones-container {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
         }
 
         .icone {
@@ -83,12 +84,13 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
+            max-width: 100px;
         }
 
         .icone .circulo {
             box-shadow: 0 0 6px gray;
-            width: 100px;
-            height: 100px;
+            width: 80px;
+            height: 80px;
             background-color: #b86134;
             border-radius: 50%;
             display: flex;
@@ -102,21 +104,20 @@
         }
 
         .icone i {
-            font-size: 50px;
+            font-size: 40px;
             color: white;
         }
 
         .icone p {
             font-family: 'Times New Roman', Times, serif;
             margin-top: 10px;
-            font-size: 18px;
+            font-size: 14px;
             color: #4a6538;
-            text-align: center;
         }
 
         span {
-            font-size: 30px;
-            margin: 20px;
+            font-size: 1.5em;
+            font-weight: bold;
         }
 
         a {
@@ -134,15 +135,46 @@
                 transform: translateY(0);
             }
         }
+
+        /* Responsividade */
+        @media (max-width: 480px) {
+            .convite {
+                padding: 20px;
+            }
+            .titulo {
+                font-size: 1em;
+            }
+            .nome {
+                font-size: 2em;
+            }
+            .data {
+                width: 80px;
+                height: 80px;
+                font-size: 30px;
+            }
+            .icone .circulo {
+                width: 70px;
+                height: 70px;
+            }
+            .icone i {
+                font-size: 30px;
+            }
+            .icone p {
+                font-size: 12px;
+            }
+        }
     </style>
 </head>
 <body>
 
 <div class="convite">
     <img src="2.png" alt="Flores">
-    <p class="titulo">Celebrar a vida é uma dádiva, e 50 anos merecem um brinde especial! Venha comemorar esse marco comigo em uma noite inesquecível repleta de alegria, carinho e boas lembranças.</p>
+    <p class="titulo">
+        Celebrar a vida é uma dádiva, e 50 anos merecem um brinde especial!<br>
+        Venha comemorar esse marco comigo em uma noite inesquecível repleta de alegria, carinho e boas lembranças.
+    </p>
     
-    <img src="3.png" alt="">
+    <img src="3.png" alt="Nome Aniversariante">
     
     <p class="info">
         <span>FEV</span>
